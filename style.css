@@ -1,0 +1,161 @@
+.container{
+margin-top: 5%;
+margin-left: 20%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+
+}
+
+.checkbox-container {
+    /* display: flex; */
+    /* align-items: right; */
+    /* background-color: #000; */
+    height:auto;
+    width: auto;
+    margin-left: 50px;
+    position: relative;
+}
+
+
+.checkbox-leftside input[type="checkbox"] {
+    margin-right: 100%; 
+}
+
+
+/* Side container */
+
+.side-container{
+    display:flex;
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items:center;
+    gap: 50px;
+    margin-left: 10px;
+    justify-content: left; 
+    position: absolute;
+}
+
+
+
+.container-fluid{
+    display: flex;
+    width: auto;
+    text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.card img{
+ 
+    height: 10%;
+    width: 100%;
+}
+
+.card{
+    flex: 1 1 21rem;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0 ,0  ,0, 0.4 );
+    padding: 10px 20px;
+    align-self: normal;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 55px;
+    margin-top: 77px;
+    
+}
+.footer .txt{
+    color: black;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .container {
+        width: 100%;
+        flex-direction: column;
+
+        
+    }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:750px){
+    .side-container{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width:0px) and (max-width:300px){
+    .side-container{
+        display: none;
+    }
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #dedbdb;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111111;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+
+
+
+
